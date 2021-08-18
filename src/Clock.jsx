@@ -1,5 +1,20 @@
 import React from 'react';
 import './Clock.css';
+import styled from 'styled-components';
+
+const ClockStyle = styled.div`
+  background-color: black;
+  color: #00FF00;
+  width: 20rem;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -10rem;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+`;
 
 class Clock extends React.Component {
   constructor(props){
@@ -28,9 +43,9 @@ class Clock extends React.Component {
 
   render(){
     return(
-      <div>
+      <ClockStyle>
       <div>{this.state.date.toLocaleTimeString()}</div>
-      </div>
+      </ClockStyle>
     )
   }
 }
