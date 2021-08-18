@@ -1,5 +1,4 @@
 import React from 'react';
-import './Clock.css';
 import styled from 'styled-components';
 
 const ClockStyle = styled.div`
